@@ -2,7 +2,9 @@
 <html>
     <head>
         <title>welcome to AKI libraries</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
+
             *
             {
                 padding:0px;margin:0px;
@@ -15,25 +17,27 @@
             font-family:cursive;
             
         }
-        .nav{
-            width:100%;
-            background-color: #00e64d;border-radius: 10px;
-            border:2px solid gray;border-radius: 10px;
-        }
-        a{text-decoration: none;color: black; 
-           }
-        a:hover{color:#217e40be;cursor:pointer;}
-        .nav ul li {display: inline-block;margin:10px;padding: 5px;
-       width:80px; border-right: 2px solid black;}
-        ul li:hover {
-            border-radius: 10px;
-            background-color:gray; 
-            border-right:none;}
-        ul li ul li {visibility: hidden;display: none;}
-        ul li ul{
-            visibility: hidden;display: none;float:left;
-        }
-         ul li:hover{visibility: visible;display:block;}
+
+
+.nav{width:100%;border-radius:10px;background-color:green;}
+       
+ul{ list-style-type:none;margin:0;padding:0;width:100%;border-radius:10px;
+overflow:hidden;background-color:green;top=0;border:2px solid black;}
+
+li{float:left;}
+
+ li a{display:block;color:black;padding:8px;text-decoration:none;}}
+
+li a:hover:not(.active){color:yellow;cursor:pointer;}
+
+li a.active{ background-color: #4CAF50; color: white;}
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+ 
+
+
         .image{
             width: 100%; display: block;}
 
@@ -107,19 +111,18 @@
                 <center>welcome</center>
             </h1>
             <div class="nav">
+
                 <ul>
                     <li><a href="#">link1</a>
-                    <ul>
-                            <li><a href="#">link1</a></li>
-                            <li><a href="#">link1</a></li>
-                            <li><a href="#">link1</a></li>
-                            <li><a href="#">link1</a></li>
-                    </ul></li>
+                    </li>
+
                     <li><a href="#">link1</a></li>
                     <li><a href="#">link1</a></li>
                     <li><a href="#">link1</a></li>
                     <li><a href="#">link1</a></li>
-                </ul><p></p></div>
+
+                </ul>
+           </div>
             <div class="magnifier">
             <div class="image">
                 <img src="lib2.jpg" alt="image not available"
@@ -171,6 +174,13 @@
                                 <p>box3</p>
                                 </div>
             </div>
+
+<ul>
+                            <li><a href="home.html">home</a></li>
+                            <li><a href="#">link2</a></li>
+                            <li><a href="#">link3</a></li>
+                            <li><a href="#">link4</a></li>
+                    </ul>
         -->
             <div class="footer">
                 <h2>footer</h2>

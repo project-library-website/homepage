@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
         <title>welcome to AKI libraries</title>
@@ -10,34 +10,68 @@
             }
         .header
         {
-            background-color: #ebebe0;
+            background-color: #c7c7bc;
             border-radius: 8px;
             font-family:cursive;
             
         }
         .nav{
             width:100%;
-            background-color: #00e64d
+            background-color: #00e64d;border-radius: 10px;
+            border:2px solid gray;border-radius: 10px;
         }
-        .main{HEIGHT:600PX;}
+        a{text-decoration: none;color: black; 
+           }
+        a:hover{color:#217e40be;cursor:pointer;}
+        .nav ul li {display: inline-block;margin:10px;padding: 5px;
+       width:80px; border-right: 2px solid black;}
+        ul li:hover {
+            border-radius: 10px;
+            background-color:gray; 
+            border-right:none;}
+        ul li ul li {visibility: hidden;display: none;}
+        ul li ul{
+            visibility: hidden;display: none;float:left;
+        }
+         ul li:hover{visibility: visible;display:block;}
+        .image{
+            width: 100%; display: block;}
+
+        .main{HEIGHT:auto;margin:none;width:100%;}
         .col1
         {
             width:25%;
-            height:100%;
+            height:auto;
             display:inline-block;
             padding: 5px;
-            margin:10px;
+            margin-top:10px;
+            margin-right:10px;
+            margin-left: 15px;
             background-color:#b3b3b3;
             border-radius: 10px;
-            border:2px solid #00ff00;
+            border:5px solid #00ff00;
            
         }
-        .col2{
-            width:40%;
-            height:100%;
+        .topcol
+        {
+            width:100%;
+            height:auto;
             text-align: center;
             padding: 5px;
-            margin:10px;
+            margin-top:10px;
+            display:block;
+            background-color: #00e64d;
+            border-radius: 10px;
+            border:5px solid #b3b3b3;
+            
+        }
+        .col2{
+            width:45%;
+            margin-right:10px;
+            height:auto;
+            text-align: center;
+            padding: 5px;
+            margin-top:10px;
             display:inline-block;
             background-color: #00e64d;
             border-radius: 10px;
@@ -47,10 +81,11 @@
         .col3
         {
             width:25%;
-            height:100%;
+            height:auto;
             display:inline-block;
             padding: 5px;
-            margin:10px;
+            margin-top:10px;
+            margin-right: 0px;
             background-color: #b3b3b3;
             border-radius: 10px;
             border:5px solid #00ff00;
@@ -69,6 +104,13 @@
            border:5px solid #00ff00;
            
         }
+        .footer
+        {
+            background-color: #00e64d;
+            width: 100%;
+            margin-top: 10px;
+        }
+    
         </style>
     </head>
 
@@ -77,32 +119,60 @@
             <h1 class="header2"> 
                 <center>welcome</center>
             </h1>
-            <div class="nav"><p>nav bar</p></div>
+            <div class="nav">
+                <ul>
+                    <li><a href="#">link1</a>
+                    <ul>
+                            <li><a href="#">link1</a></li>
+                            <li><a href="#">link1</a></li>
+                            <li><a href="#">link1</a></li>
+                            <li><a href="#">link1</a></li>
+                    </ul></li>
+                    <li><a href="#">link1</a></li>
+                    <li><a href="#">link1</a></li>
+                    <li><a href="#">link1</a></li>
+                    <li><a href="#">link1</a></li>
+                </ul><p></p></div>
+            <div class="magnifier">
+            <div class="image">
+                <img src="lib3.jpg" alt="image not available"
+                 style="width:100%;border-radius: 10px;height: 450px;
+                 margin-right:10px;">
+            </div>
+        </div>
             <div class="main">
+                    <div class="topcol"><p>topcol</p></div>
                 <div class="col1">
-                    <p>leftgfygewyfgyawegygqwyqgfeuhbfkjbdjksvbjasygyiergfuishkfhajkd
-                        uieagfuaegfujkfbdsjsbcnzxncbahsgfyuawgefysdhkjcbnjkd
-                        jauegfyahbcjkbdnnmcnbsdhugfyuaehudAKLDNAS
-                        DASGFYAGCBDHGSDYURTuhdkjaBFJASFYASGFHBVGYREFJKASDVJBDNMV
+                    <p>left
                     </p>
                 </div>
                 <div class="col2">
                     <p>mid
-                            gfygewyfgyawegygqwyqgfeuhbfkjbdjksvbjasygyiergfuishkfhajkd
-                            uieagfuaegfujkfbdsjsbcnzxncbahsgfyuawgefysdhkjcbnjkd
-                            jauegfyahbcjkbdnnmcnbsdhugfyuaehudAKLDNAS
-                            DASGFYAGCBDHGSDYURTuhdkjaBFJASFYASGFHBVGYREFJKASDVJBDNMV
+                            
                     </p>
                 </div>
                 <div class="col3">
                     <p>right
-                            gfygewyfgyawegygqwyqgfeuhbfkjbdjksvbjasygyiergfuishkfhajkd
-                            uieagfuaegfujkfbdsjsbcnzxncbahsgfyuawgefysdhkjcbnjkd
-                            jauegfyahbcjkbdnnmcnbsdhugfyuaehudAKLDNAS
-                            DASGFYAGCBDHGSDYURTuhdkjaBFJASFYASGFHBVGYREFJKASDVJBDNMV
                     </p>
                 </div>
             </div>
+            <div class="main">
+                 
+                <div class="col1">
+                    <p>left
+                    </p>
+                </div>
+                <div class="col2">
+                    <p>mid
+                            
+                    </p>
+                </div>
+                <div class="col3">
+                    <p>right
+                    </p>
+                </div>
+            </div>
+            <!--
             <div class="boxes">
                 <div class="box1">
                 <p>box1</p>
@@ -113,6 +183,10 @@
                         <div class="box1">
                                 <p>box3</p>
                                 </div>
+            </div>
+        -->
+            <div class="footer">
+                <h2>footer</h2>
             </div>
     </body>
 </html>
